@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add paragraph in div</title>
+</head>
+<body>
+     <button onclick="addParagraph()">Add Paragraph</button>
+    <div id="myDiv">
+        <p>This is a paragraph.</p>
+    </div> 
+   
+    <script>
+        function addParagraph(){
+            const myDiv = document.getElementById("myDiv");
+            const newParagraph = document.createElement("p");
+            newParagraph.textContent = "This is a new paragraph.";
+            myDiv.appendChild(newParagraph);
+        }
+    </script>
+</body>
+</html>
